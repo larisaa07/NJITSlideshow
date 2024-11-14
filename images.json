@@ -4,61 +4,61 @@
             "imgPath": "img/bartender.jpg",
             "name": "Sips",
             "career": "Bartender",
-            "pay": "01/01/2016"
+            "pay": "11 treats"
         },
         {
             "imgPath": "img/captain.jpg",
             "name": "Salty",
             "career": "Captain",
-            "pay": "01/02/2016"
+            "pay": "18 treats"
         },
         {
             "imgPath": "img/cook.jpg",
             "name": "Spice",
             "career": "Cook",
-            "pay": "01/03/2016"
+            "pay": "14 treats"
         },
         {
             "imgPath": "img/doctor.jpg",
             "name": "Sniffles",
             "career": "Doctor",
-            "pay": "01/04/2016"
+            "pay": "20 treats"
         },
         {
             "imgPath": "img/farmer.jpg",
             "name": "Sprout",
             "career": "Farmer",
-            "pay": "01/05/2016"
+            "pay": "12 treats"
         },
         {
             "imgPath": "img/firefighter.jpg",
             "name": "Spark",
             "career": "Fire Fighter",
-            "pay": "01/06/2016"
+            "pay": "15 treats"
         },
         {
             "imgPath": "img/mechanic.jpg",
             "name": "Smudge",
             "career": "Mechanic",
-            "pay": "01/07/2016"
+            "pay": "16 treats"
         },
         {
             "imgPath": "img/pilot.jpg",
             "name": "Skyler",
             "career": "Pilot",
-            "pay": "01/08/2016"
+            "pay": "19 treats"
         },
         {
             "imgPath": "img/programer.jpg",
             "name": "Static",
             "career": "Programmer",
-            "pay": "01/09/2016"
+            "pay": "17 treats"
         },
         {
             "imgPath": "img/teacher.jpg",
             "name": "Scholar",
             "career": "Teacher",
-            "pay": "Catnip Bonus"
+            "pay": "13 treats"
         }
     ]
 }

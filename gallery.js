@@ -1,15 +1,18 @@
 let mCurrentIndex = 0 // Tracks the current image index
 let mImages = [] // Array to hold GalleryImage objects
-const mUrl = 'https://your-json-url.com' // Replace with actual JSON URL
+const mUrl = 'images.json' // Replace with actual JSON URL
 const mWaitTime = 5000 // Timer interval in milliseconds
 
 $(document).ready(() => {
-  $('.details').hide() // Hide details initially
+ // $('.details').hide() // Hide details initially
 
   // Call a function here to start the timer for the slideshow
 
   // Select the moreIndicator button and add a click event to:
   // - toggle the rotation classes (rot90 and rot270)
+  $('.moreIndicator').on('click', function(){
+    $('.rot90').toggle()
+  })
   // - slideToggle the visibility of the .details section
 
   // Select the "Next Photo" button and add a click event to call showNextPhoto
@@ -41,10 +44,14 @@ function fetchJSON () {
 // Function to swap and display the next photo in the slideshow
 function swapPhoto () {
   // Access mImages[mCurrentIndex] to update the image source and details
-
-   = mImages[mCurrentIndex].imgPath
+  $('#photo').attr('src', mImages[mCurrentIndex].imgPath)
   // Update the #photo element's src attribute with the current image's path
+  
   // Update the .location, .description, and .date elements with the current image's details
+  $('.name').text(`Name: ${mImages[mCurrentIndex].name}`);
+  $('.career').text(`Career: ${mImages[mCurrentIndex].career}`);
+  $('.pay').text(`Pay: ${mImages[mCurrentIndex].pay}`);
+
 }
 
 // Advances to the next photo, loops to the first photo if the end of array is reached
