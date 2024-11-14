@@ -22,6 +22,17 @@ $(document).ready(() => {
 
 // Function to fetch JSON data and store it in mImages
 function fetchJSON () {
+  $.ajax({
+    type: 'GET',
+    url: 'images.json',
+    dataType: 'json',
+    success: function (data) {
+      mImages = data.images
+
+      swapPhoto()
+
+    }
+})
   // Use $.ajax here to request the JSON data from mUrl
   // On success, parse the JSON and push each image object into mImages array
   // After JSON is loaded, call swapPhoto() to display the first image
@@ -30,6 +41,8 @@ function fetchJSON () {
 // Function to swap and display the next photo in the slideshow
 function swapPhoto () {
   // Access mImages[mCurrentIndex] to update the image source and details
+
+   = mImages[mCurrentIndex].imgPath
   // Update the #photo element's src attribute with the current image's path
   // Update the .location, .description, and .date elements with the current image's details
 }
